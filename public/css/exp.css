@@ -1,0 +1,21 @@
+#slider {
+    margin: 85px 85px 0px 85px;
+}
+#slider img {
+    width: 100%;
+}
+#timing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+#content {
+    margin: 0px 200px 50px 200px;
+}
+#content .content__heading {
+    margin-bottom: 20px;
+}
+#content > p {
+    margin-bottom: 15px;
+}

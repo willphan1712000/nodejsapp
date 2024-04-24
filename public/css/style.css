@@ -1,0 +1,249 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: 'Sora', sans-serif;
+   scroll-behavior: smooth;
+}
+:root {
+   --p-color: #f2eee2;
+}
+/* COMMON ELEMENTs */
+ul {
+   list-style-type: none;
+}
+a {
+   text-decoration: none;
+   color: #000;
+}
+.title {
+   padding-top: 30px;
+   text-align: center;
+}
+h1, h2 {
+   color: #15295f;
+}
+h3 {
+   color: orange;
+}
+/* Header begins */
+#header {
+   display: flex;
+   background-color: #f0f0f0;
+   align-items: center;
+   height: 60px;
+   position: fixed;
+   top: 0;
+   z-index: 9;
+   animation: header .9s linear;
+}
+@keyframes header {
+   from {
+      opacity: 0;
+      top: 15px;
+   }
+   to {
+      opacity: 1;
+      top: 0;
+   }
+}
+#header .logo {
+   flex: 1;
+   padding: 20px;
+}
+#header .logo img {
+   width: 100%;
+   height: 100%;
+}
+#header .nav-list {
+   flex: 15;
+   text-transform: uppercase;
+   font-size: 15px;
+   margin-left: 500px;
+}
+#header ul {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+}
+/* Header ends */
+
+/* Slider begins */
+#intro {
+   display: flex;
+   flex-direction: row;
+   margin-top: 65px;
+   background-color: #f0f0f0;
+}
+#intro .intro__text {
+   flex: 1;
+   padding: 80px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+#intro .intro__text h1 {
+   font-size: 55px;
+}
+#intro .intro__text h1, #intro .intro__text h2 {
+   margin: 10px 0px 10px 0px;
+}
+#intro .intro__text p {
+   color: #6f6b80;
+}
+#intro .intro__img {
+   flex: 1;
+   padding: 15px;
+}
+#intro .intro__img img {
+   width: 100%;
+   height: 100%;
+}
+.redirect-site {
+   margin-top: 25px;
+   display: flex;
+   flex-direction: row;
+}
+.redirect-site__btn {
+   border: solid 2px orange;
+    border-radius: 20px;
+    padding: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: all .4s;
+}
+.redirect-site__btn:hover {
+   color: #fff;
+   background-color: orange;
+}
+/* Slider ends */
+
+/* life begins */
+#life {
+   display: flex;
+   flex-direction: row;
+   height: 400px;
+   background-color: #f0f0f0;
+}
+#life .container img {
+   width: 100%;
+   height: 150px;
+   object-fit: cover;
+   border-radius: 15px 15px 0px 0px;
+}
+#life .container {
+   width: 250px;
+   margin: 20px;
+   background-color: #fff;
+   border-radius: 15px;
+   transition: all .4s;
+   cursor: pointer;
+}
+#life .container:hover {
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   transform: translateY(-5px); 
+}
+/* life ends */
+
+/* story begins */
+#story-section {
+   display: flex;
+   background: #d7caca;
+}
+#story-section .image img {
+   width: 100%;
+}
+#story-section .image {
+   flex-basis: calc(100%/3);
+   margin: 10px;
+}
+#story-section .story-text {
+   flex-basis: calc(200%/3);
+   padding: 40px 100px;
+}
+#story-section .story-text p {
+   padding: 15px 0px;
+}
+/* story ends */
+
+/* Contact begins */
+#contact-section .contact-list i {
+   display: inline-block;
+   width: 30px;
+}
+#contact-section .contact-list ul {
+   line-height: 2em;
+}
+#contact-section .contact-box {
+   display: flex;
+}
+#contact-section .contact-box .contact-text .na-em-box{
+   display: flex;
+   margin-bottom: 20px;
+}
+#contact-section .name-box {
+   width: 100%;
+   padding-right: 10px;
+}
+#contact-section .email-box {
+   padding-left: 10px;
+   width: 100%;
+}
+#contact-section .massage-box {
+   width: 100%;
+   margin-top: 10px;
+}
+#contact-section .name,
+#contact-section .email,
+#contact-section .massage {
+   width: 100%;
+   height: 3em;
+   padding: 10px;
+}
+#contact-section .contact-box .contact-list {
+   flex: 1;
+   padding: 40px;
+}
+#contact-section .contact-box .contact-text {
+   flex: 1;
+   padding: 40px;
+}
+#contact-section .send-btn {
+   color: #fff;
+   background: #000;
+   margin-top: 10px;
+   padding: 10px 15px;
+   border: none;
+   cursor: pointer;
+   float: right;
+}
+/* Contact ends */
+
+/* Footer begins */
+#footer {
+   background: var(--p-color);
+}
+#footer .image img {
+   width: 100%;
+   padding: 20px;
+}
+#footer .image {
+   width: 180px;
+   margin: auto;
+}
+#footer .media {
+   width: 20%;
+   margin: auto;
+   font-size: 35px;
+   display: flex;
+   justify-content: space-around;
+}
+#footer .privacy {
+   padding: 20px 35%;
+   width: 100%;
+   margin: auto;
+   justify-content: space-around;
+   display: flex;
+}
+
+/* Footer ends */
